@@ -1,4 +1,3 @@
-import subprocess
 def validate_username(username):
     """Return True when a username is acceptable."""
     if not isinstance(username, str):
@@ -28,6 +27,3 @@ def create_profile_message(username, role="student"):
 if __name__ == "__main__":
     print(create_profile_message("student_01"))
 
-def show_directory_contents():
-    """Safer version for Windows."""
-    subprocess.run(["cmd", "/c", "dir"], check=True)
